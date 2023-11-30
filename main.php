@@ -1,12 +1,15 @@
-<!-- $symbols = '!?&%$<>^+-*/()[]{}@#_='; -->
+<?php
+include __DIR__ . "/Functions/function.php";
+$newPassword = generatePassword();
+?>
 
 <main class="container">
 
     <div>
         <div class="p-4 border border-1 ">
-            qui metto alert, errori o password generata
+            <?php echo $newPassword; ?>
         </div>
-        <form action="main.php" method="GET" class="p-4 border border-1 mt-2 ">
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="GET" class="p-4 border border-1 mt-2 ">
 
             <div class="container-fluid mt-5 p-0">
                 <div class="row">
@@ -17,7 +20,7 @@
                     <div class="col-lg-6">
                         <!-- lunghezza password -->
                         <div>
-                            <input type="number" name="numero">
+                            <input type="number" name="passLenght" min="6" max="18">
                         </div>
 
                         <!-- Radio -->
