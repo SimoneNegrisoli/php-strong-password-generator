@@ -3,13 +3,14 @@ include __DIR__ . "/Functions/function.php";
 $newPassword = generatePassword();
 ?>
 
-<main class="container">
+<main class="container ">
 
     <div>
-        <div class="p-4 border border-1 ">
+        <div class="p-4 border border-1 rounded-4 mylight-blue">
             <?php echo $newPassword; ?>
         </div>
-        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="GET" class="p-4 border border-1 mt-2 ">
+        <form action="<?php echo $_SERVER['PHP_SELF'] ?>" method="GET"
+            class="p-4 border border-1 rounded-4  mt-2 mylight ">
 
             <div class="container-fluid mt-5 p-0">
                 <div class="row">
@@ -26,14 +27,16 @@ $newPassword = generatePassword();
                         <!-- Radio -->
                         <div class="mt-3">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="si" id="repetiton">
-                                <label class="form-check-label" for="repetiton">
+                                <input class="form-check-input" type="radio" name="repetiton" id="repetiton_si"
+                                    value="1">
+                                <label class="form-check-label" for="repetiton_si">
                                     Si
                                 </label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="no" id="norepetition" checked>
-                                <label class="form-check-label" for="norepetition">
+                                <input class="form-check-input" type="radio" name="repetiton" id="repetition_no" checked
+                                    value="0">
+                                <label class="form-check-label" for="repetition_no">
                                     No
                                 </label>
                             </div>

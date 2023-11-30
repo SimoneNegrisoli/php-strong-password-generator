@@ -1,4 +1,4 @@
 <header class="container text-center ">
-    <h1>Strong Password Generator</h1>
-    <h3>Genera una password sicura</h3>
+    <h1 class="mygrey">Strong Password Generator</h1>
+    <h3 class="mywhite">Genera una password sicura</h3>
 </header>

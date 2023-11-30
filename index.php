@@ -10,7 +10,7 @@
     <title>PHP Strong Password Generator</title>
 </head>
 
-<body>
+<body class=" myblue ">
     <?php include __DIR__ . '/header.php' ?>
 
     <?php include __DIR__ . '/main.php' ?>
